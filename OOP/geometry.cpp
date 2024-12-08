@@ -74,7 +74,7 @@ class Triangle: public Shape
 
     void displayArea() override
     {
-        cout << "Triange Area: " << area << endl;
+        cout << "Triange Area: " << area() << endl;
     }
 
     void setDimensions(double b, double h)
@@ -104,7 +104,7 @@ int main()
     // creating objects
     Rectangle rect(5.0, 3.0);
     Circle circ(4.0);
-    Triangle(5.0, 7.0);
+    Triangle tri(5.0, 7.0);
 
     // displays areas
     rect.displayArea();
