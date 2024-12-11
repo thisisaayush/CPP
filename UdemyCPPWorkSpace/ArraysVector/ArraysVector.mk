@@ -3,12 +3,12 @@
 ## any manual changes will be erased      
 ##
 ## Debug
-ProjectName            :=CPPProject
+ProjectName            :=ArraysVector
 ConfigurationName      :=Debug
 WorkspaceConfiguration :=Debug
 WorkspacePath          :="C:/Users/thaku/Desktop/Software Engineering Projects/CPP-Udemy/UdemyCPPWorkSpace"
-ProjectPath            :="C:/Users/thaku/Desktop/Software Engineering Projects/CPP-Udemy/UdemyCPPWorkSpace/CPPProject"
-IntermediateDirectory  :=../build-$(WorkspaceConfiguration)/CPPProject
+ProjectPath            :="C:/Users/thaku/Desktop/Software Engineering Projects/CPP-Udemy/UdemyCPPWorkSpace/ArraysVector"
+IntermediateDirectory  :=../build-$(WorkspaceConfiguration)/ArraysVector
 OutDir                 :=$(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
@@ -54,7 +54,7 @@ LibPath                := $(LibraryPathSwitch).
 AR       := C:/mingw64/bin/ar.exe -r
 CXX      := C:/mingw64/bin/g++.exe
 CC       := C:/mingw64/bin/gcc.exe
-CXXFLAGS :=  -O0 -gdwarf-2 -std=c++17 -Wall $(Preprocessors)
+CXXFLAGS :=  -gdwarf-2 -O0 -Wall $(Preprocessors)
 CFLAGS   :=  -gdwarf-2 -O0 -Wall $(Preprocessors)
 ASFLAGS  := 
 AS       := C:/mingw64/bin/as.exe
@@ -64,7 +64,7 @@ AS       := C:/mingw64/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Rectangle.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/up_CPPProject_src_ArraysVectors_Array.cpp$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
 
 
 
@@ -95,15 +95,15 @@ PreBuild:
 ##
 ## Objects
 ##
+$(IntermediateDirectory)/up_CPPProject_src_ArraysVectors_Array.cpp$(ObjectSuffix): ../CPPProject/src/ArraysVectors/Array.cpp 
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/thaku/Desktop/Software Engineering Projects/CPP-Udemy/UdemyCPPWorkSpace/CPPProject/src/ArraysVectors/Array.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/up_CPPProject_src_ArraysVectors_Array.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/up_CPPProject_src_ArraysVectors_Array.cpp$(PreprocessSuffix): ../CPPProject/src/ArraysVectors/Array.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/up_CPPProject_src_ArraysVectors_Array.cpp$(PreprocessSuffix) ../CPPProject/src/ArraysVectors/Array.cpp
+
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp 
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/thaku/Desktop/Software Engineering Projects/CPP-Udemy/UdemyCPPWorkSpace/CPPProject/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/thaku/Desktop/Software Engineering Projects/CPP-Udemy/UdemyCPPWorkSpace/ArraysVector/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
-
-$(IntermediateDirectory)/Rectangle.cpp$(ObjectSuffix): Rectangle.cpp 
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/thaku/Desktop/Software Engineering Projects/CPP-Udemy/UdemyCPPWorkSpace/CPPProject/Rectangle.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Rectangle.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Rectangle.cpp$(PreprocessSuffix): Rectangle.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Rectangle.cpp$(PreprocessSuffix) Rectangle.cpp
 
 ##
 ## Clean
