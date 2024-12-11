@@ -3,6 +3,11 @@
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="src">
+    <VirtualDirectory Name="ArraysVectors">
+      <File Name="src/ArraysVectors/main.cpp"/>
+      <File Name="src/ArraysVectors/Array.cpp"/>
+      <File Name="src/ArraysVectors/Array.hpp"/>
+    </VirtualDirectory>
     <VirtualDirectory Name="Constructors">
       <File Name="src/Constructors/PingPong.cpp"/>
     </VirtualDirectory>

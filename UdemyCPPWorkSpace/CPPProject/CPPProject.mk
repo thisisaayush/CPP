@@ -64,7 +64,7 @@ AS       := C:/mingw64/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/src_Constructors_PingPong.cpp$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Rectangle.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/src_Constructors_PingPong.cpp$(ObjectSuffix) $(IntermediateDirectory)/src_ArraysVectors_Array.cpp$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/src_ArraysVectors_main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Rectangle.cpp$(ObjectSuffix) 
 
 
 
@@ -100,10 +100,20 @@ $(IntermediateDirectory)/src_Constructors_PingPong.cpp$(ObjectSuffix): src/Const
 $(IntermediateDirectory)/src_Constructors_PingPong.cpp$(PreprocessSuffix): src/Constructors/PingPong.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/src_Constructors_PingPong.cpp$(PreprocessSuffix) src/Constructors/PingPong.cpp
 
+$(IntermediateDirectory)/src_ArraysVectors_Array.cpp$(ObjectSuffix): src/ArraysVectors/Array.cpp 
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/thaku/Desktop/Software Engineering Projects/CPP-Udemy/UdemyCPPWorkSpace/CPPProject/src/ArraysVectors/Array.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/src_ArraysVectors_Array.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/src_ArraysVectors_Array.cpp$(PreprocessSuffix): src/ArraysVectors/Array.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/src_ArraysVectors_Array.cpp$(PreprocessSuffix) src/ArraysVectors/Array.cpp
+
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp 
 	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/thaku/Desktop/Software Engineering Projects/CPP-Udemy/UdemyCPPWorkSpace/CPPProject/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
+
+$(IntermediateDirectory)/src_ArraysVectors_main.cpp$(ObjectSuffix): src/ArraysVectors/main.cpp 
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/thaku/Desktop/Software Engineering Projects/CPP-Udemy/UdemyCPPWorkSpace/CPPProject/src/ArraysVectors/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/src_ArraysVectors_main.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/src_ArraysVectors_main.cpp$(PreprocessSuffix): src/ArraysVectors/main.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/src_ArraysVectors_main.cpp$(PreprocessSuffix) src/ArraysVectors/main.cpp
 
 $(IntermediateDirectory)/Rectangle.cpp$(ObjectSuffix): Rectangle.cpp 
 	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/thaku/Desktop/Software Engineering Projects/CPP-Udemy/UdemyCPPWorkSpace/CPPProject/Rectangle.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Rectangle.cpp$(ObjectSuffix) $(IncludePath)
