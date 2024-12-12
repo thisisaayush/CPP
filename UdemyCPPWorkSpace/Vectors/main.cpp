@@ -1,7 +1,9 @@
-#include <stdio.h>
+#include "Array.hpp"
 
-int main(int argc, char **argv)
-{
-	printf("hello world\n");
-	return 0;
+int main() {
+    ArrayVector av;
+    av.printArray();
+    av.printVector();
+
+    return 0;
 }

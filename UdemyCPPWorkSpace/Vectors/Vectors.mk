@@ -64,7 +64,7 @@ AS       := C:/mingw64/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/Array.cpp$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
 
 
 
@@ -95,6 +95,11 @@ PreBuild:
 ##
 ## Objects
 ##
+$(IntermediateDirectory)/Array.cpp$(ObjectSuffix): Array.cpp 
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/thaku/Desktop/Software Engineering Projects/CPP-Udemy/UdemyCPPWorkSpace/Vectors/Array.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Array.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Array.cpp$(PreprocessSuffix): Array.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Array.cpp$(PreprocessSuffix) Array.cpp
+
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp 
 	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/thaku/Desktop/Software Engineering Projects/CPP-Udemy/UdemyCPPWorkSpace/Vectors/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
