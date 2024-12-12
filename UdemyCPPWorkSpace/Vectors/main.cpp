@@ -1,6 +1,7 @@
 #include "Array.hpp"
 
-int main() {
+int main() 
+{
     ArrayVector av;
     av.printArray();
     av.printVector();
