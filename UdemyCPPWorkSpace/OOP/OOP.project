@@ -93,6 +93,8 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
+    <File Name="Pointers_Reference.cpp"/>
+    <File Name="Pointers_Reference.hpp"/>
     <File Name="Encapsulation.hpp"/>
     <File Name="Methods.hpp"/>
     <File Name="Methods.cpp"/>
