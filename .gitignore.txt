@@ -1,2 +1,10 @@
 UdemyCPPWorkSpace/makefiles/
 UdemyCPPWorkSpace/build/
+
+.codelite
+CPPProject
+build-Debug
+**Makefile
+**.clang-format
+**.clangd
+*.mk
