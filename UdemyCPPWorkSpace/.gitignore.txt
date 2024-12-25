@@ -1,0 +1,3 @@
+UdemyCPPWorkSpace/makefiles/
+UdemyCPPWorkSpace/build/
+UdemyCPPWorkSpace/.codelite/

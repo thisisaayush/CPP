@@ -1,4 +1,5 @@
 #include "ShapeSize.hpp"
+#include "Calculator.hpp"
 #include <iostream>
 using namespace std;
 
@@ -25,6 +26,12 @@ int main() {
 
     cout << "Sphere:" << endl;
     printShapeInfo(sphere);
+    
+    Calculator calc;
+    int x = 10, y = 5;
+    cout << "Add: " << calc.add(x, y) << endl;
+    cout << "Subtract: " << calc.subtract(x, y) << endl;
+    cout << "Multiply: " << calc.multiply(x, y) << endl;
 
     return 0;
 }

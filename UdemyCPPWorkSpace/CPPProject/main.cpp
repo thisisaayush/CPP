@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Rectangle.hpp"
+#include "Calculator.hpp"
 using namespace std;
 
 int main()

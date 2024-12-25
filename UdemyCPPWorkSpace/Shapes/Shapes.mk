@@ -14,7 +14,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=thaku
-Date                   :=11/12/2024
+Date                   :=25/12/2024
 CodeLitePath           :="C:/Program Files/CodeLite"
 MakeDirCommand         :=mkdir
 LinkerName             :=C:/mingw64/bin/g++.exe
@@ -64,7 +64,7 @@ AS       := C:/mingw64/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/ShapeSize.cpp$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/Calculator.cpp$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/ShapeSize.cpp$(ObjectSuffix) 
 
 
 
@@ -95,15 +95,20 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/ShapeSize.cpp$(ObjectSuffix): ShapeSize.cpp 
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/thaku/Desktop/Software Engineering Projects/CPP-Udemy/UdemyCPPWorkSpace/Shapes/ShapeSize.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/ShapeSize.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/ShapeSize.cpp$(PreprocessSuffix): ShapeSize.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/ShapeSize.cpp$(PreprocessSuffix) ShapeSize.cpp
+$(IntermediateDirectory)/Calculator.cpp$(ObjectSuffix): Calculator.cpp 
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/thaku/Desktop/Software Engineering Projects/CPP-Udemy/UdemyCPPWorkSpace/Shapes/Calculator.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Calculator.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Calculator.cpp$(PreprocessSuffix): Calculator.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Calculator.cpp$(PreprocessSuffix) Calculator.cpp
 
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp 
 	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/thaku/Desktop/Software Engineering Projects/CPP-Udemy/UdemyCPPWorkSpace/Shapes/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
+
+$(IntermediateDirectory)/ShapeSize.cpp$(ObjectSuffix): ShapeSize.cpp 
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/thaku/Desktop/Software Engineering Projects/CPP-Udemy/UdemyCPPWorkSpace/Shapes/ShapeSize.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/ShapeSize.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/ShapeSize.cpp$(PreprocessSuffix): ShapeSize.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/ShapeSize.cpp$(PreprocessSuffix) ShapeSize.cpp
 
 ##
 ## Clean

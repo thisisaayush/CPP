@@ -14,7 +14,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=thaku
-Date                   :=11/12/2024
+Date                   :=25/12/2024
 CodeLitePath           :="C:/Program Files/CodeLite"
 MakeDirCommand         :=mkdir
 LinkerName             :=C:/mingw64/bin/g++.exe
@@ -64,7 +64,7 @@ AS       := C:/mingw64/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Rectangle.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Rectangle.cpp$(ObjectSuffix) $(IntermediateDirectory)/src_OOP_Calculator.cpp$(ObjectSuffix) 
 
 
 
@@ -104,6 +104,11 @@ $(IntermediateDirectory)/Rectangle.cpp$(ObjectSuffix): Rectangle.cpp
 	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/thaku/Desktop/Software Engineering Projects/CPP-Udemy/UdemyCPPWorkSpace/CPPProject/Rectangle.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Rectangle.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/Rectangle.cpp$(PreprocessSuffix): Rectangle.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Rectangle.cpp$(PreprocessSuffix) Rectangle.cpp
+
+$(IntermediateDirectory)/src_OOP_Calculator.cpp$(ObjectSuffix): src/OOP/Calculator.cpp 
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/thaku/Desktop/Software Engineering Projects/CPP-Udemy/UdemyCPPWorkSpace/CPPProject/src/OOP/Calculator.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/src_OOP_Calculator.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/src_OOP_Calculator.cpp$(PreprocessSuffix): src/OOP/Calculator.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/src_OOP_Calculator.cpp$(PreprocessSuffix) src/OOP/Calculator.cpp
 
 ##
 ## Clean

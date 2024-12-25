@@ -3,6 +3,7 @@
   <Project Name="CPPProject" Path="CPPProject/CPPProject.project" Active="No"/>
   <Project Name="Vectors" Path="Vectors/Vectors.project" Active="No"/>
   <Project Name="Shapes" Path="Shapes/Shapes.project" Active="Yes"/>
+  <Project Name="OOP" Path="OOP/OOP.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug">
       <Environment/>
@@ -10,6 +11,7 @@
       <Project Name="Vectors" ConfigName="Debug"/>
       <Project Name="Shapes" ConfigName="Debug"/>
       <Project Name="Shapes" ConfigName="Debug"/>
+      <Project Name="OOP" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release">
       <Environment/>
@@ -17,6 +19,7 @@
       <Project Name="Vectors" ConfigName="Release"/>
       <Project Name="Shapes" ConfigName="Release"/>
       <Project Name="Shapes" ConfigName="Release"/>
+      <Project Name="OOP" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
