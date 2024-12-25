@@ -1,1 +1,0 @@
-../build-Debug/Shapes/Calculator.cpp.o ../build-Debug/Shapes/main.cpp.o ../build-Debug/Shapes/ShapeSize.cpp.o   

@@ -13,3 +13,5 @@
 
 # Ignore .mk files in all directories
 **/*.mk
+compile_commands.json
+UdemyCPPWorkSpace.workspace
