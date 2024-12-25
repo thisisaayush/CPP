@@ -1,9 +1,9 @@
-# Ignore specific folders in the SWE_Project directory
+# Ignore specific folders 
 /.codelite/
 /CPPProject/
 /build-Debug/
 
-# Ignore specific files in the SWE_Project directory
+# Ignore specific files in all directories
 /Makefile
 /compile_commands
 
