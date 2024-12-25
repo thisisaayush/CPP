@@ -1,3 +1,15 @@
-UdemyCPPWorkSpace/makefiles/
-UdemyCPPWorkSpace/build/
-UdemyCPPWorkSpace/.codelite/
+# Ignore specific folders in the SWE_Project directory
+/.codelite/
+/CPPProject/
+/build-Debug/
+
+# Ignore specific files in the SWE_Project directory
+/Makefile
+/compile_commands
+
+# Ignore .clang-format and .clangd files in all directories
+**/.clang-format
+**/.clangd
+
+# Ignore .mk files in all directories
+**/*.mk
