@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeLite_Project Name="Shapes" Version="11000" InternalType="Console">
+<CodeLite_Project Name="Inheritance" Version="11000" InternalType="Console">
   <Description/>
   <Dependencies/>
   <Settings Type="Executable">
@@ -93,8 +93,10 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
-    <File Name="ShapeSize.cpp"/>
-    <File Name="ShapeSize.hpp"/>
+    <File Name="Employee.cpp"/>
+    <File Name="Employee.hpp"/>
+    <File Name="Inheritance.cpp"/>
+    <File Name="Inheritance.hpp"/>
     <File Name="main.cpp"/>
   </VirtualDirectory>
 </CodeLite_Project>

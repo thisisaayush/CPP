@@ -1,5 +1,4 @@
 #include "ShapeSize.hpp"
-#include "Calculator.hpp"
 #include <iostream>
 using namespace std;
 
@@ -9,7 +8,8 @@ void printShapeInfo(const ShapeSize& shape) {
     cout << "Volume: " << shape.volume() << endl;
 }
 
-int main() {
+int main() 
+{
     Rectangle rectangle(5, 10);
     Square square(4);
     Circle circle(3);
@@ -27,11 +27,5 @@ int main() {
     cout << "Sphere:" << endl;
     printShapeInfo(sphere);
     
-    Calculator calc;
-    int x = 10, y = 5;
-    cout << "Add: " << calc.add(x, y) << endl;
-    cout << "Subtract: " << calc.subtract(x, y) << endl;
-    cout << "Multiply: " << calc.multiply(x, y) << endl;
-
     return 0;
 }
