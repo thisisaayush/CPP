@@ -7,7 +7,7 @@ class Inheritance
 {
 private:
     string name;
-    int age;    
+    int age;   
     
 public:
     Inheritance(string name, int age);
